@@ -30,7 +30,7 @@ for line in f:
     if is_safe(values):
         total_safe = total_safe + 1
         dampener_safe = dampener_safe + 1
-    else: # dampener section
+    else:
         for index in range(len(values)):
             modified_values = values[:index] + values[index + 1:] # gets array with value at index removed
             if is_safe(modified_values):

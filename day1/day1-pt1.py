@@ -17,3 +17,4 @@ for index in range(len(list_one)):
     total_diff = total_diff + diff
 
 print(f"total diff: {total_diff}")
+
