@@ -1,5 +1,3 @@
-import copy
-
 def is_safe(values):
     is_increasing = True
     is_decreasing = True
@@ -32,7 +30,7 @@ for line in f:
         total_safe = total_safe + 1
     else:
         for index in range(len(values)):
-            modified_values = values[:index] + values[index + 1:]
+            modified_values = values[:index] + values[index + 1:] # gets array with value at index removed
             if is_safe(modified_values):
                 total_safe = total_safe + 1
                 break
